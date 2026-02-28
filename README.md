@@ -1,0 +1,266 @@
+# Heavenly Roofing LLC - Independent Contractor Agreement
+
+Professional LaTeX contract template for insurance supplement specialist services.
+
+## Overview
+
+This project generates a professional, notarization-ready legal contract between Heavenly Roofing LLC and an insurance supplement specialist. The contract establishes revenue-sharing terms, training obligations, and comprehensive legal protections.
+
+## Contract Features
+
+### Core Business Terms
+- **Standard Split**: Specialist receives 70%, Heavenly Roofing receives 30%
+- **Big Supplements**: Claims of $10,000+ trigger a 50/50 split
+- **Trial Period**: After 8 completed jobs, all claims convert to 50/50 permanently
+- **Knowledge Exchange**: Mutual training obligations (sales and clerical)
+
+### Legal Protections
+- Termination provisions (30-day notice and for cause)
+- Confidentiality and non-disclosure agreements
+- Liability and indemnification clauses
+- Dispute resolution process (mediation and litigation)
+- Oklahoma governing law and notarization section
+
+## Prerequisites
+
+You need a LaTeX distribution installed on your system:
+
+### Linux (Ubuntu/Debian)
+```bash
+sudo apt update
+sudo apt install texlive-latex-base texlive-latex-extra
+```
+
+### macOS
+```bash
+brew install --cask mactex
+```
+
+Or download from: https://www.tug.org/mactex/
+
+### Windows
+Download and install MiKTeX: https://miktex.org/download
+
+### Alternative: Online (No Installation)
+Use Overleaf: https://www.overleaf.com/
+- Upload all project files to a new Overleaf project
+- Set `contract.tex` as the main document
+- Compile to generate PDF
+
+## Building the Contract
+
+### Method 1: Using Make (Recommended for Linux/Mac)
+```bash
+# Build the contract
+make
+
+# Build and open the PDF
+make view
+
+# Clean build artifacts
+make clean
+
+# Verify LaTeX installation
+make check
+```
+
+### Method 2: Direct pdflatex (All platforms)
+```bash
+# Create build directory
+mkdir -p build
+
+# Compile the contract (run twice for references)
+pdflatex -output-directory=build contract.tex
+pdflatex -output-directory=build contract.tex
+
+# The PDF will be at: build/contract.pdf
+```
+
+### Method 3: Continuous Compilation (Optional)
+```bash
+# Requires latexmk
+make watch
+
+# The PDF will automatically rebuild when you save changes
+```
+
+## Filling in the Contract
+
+The contract includes red-colored placeholder fields that need to be filled in:
+
+### Specialist Information (Required)
+Search for these placeholders in the generated PDF or source files:
+- `[FILL IN SPECIALIST NAME]`
+- `[FILL IN SPECIALIST ADDRESS LINE 1]`
+- `[FILL IN SPECIALIST ADDRESS LINE 2]`
+- `[FILL IN SPECIALIST CITY, STATE ZIP]`
+
+### How to Fill Placeholders
+
+**Option 1: Edit the LaTeX Source**
+1. Open `sections/parties.tex`
+2. Replace the red `{\color{red}[FILL IN ...]}` text with actual information
+3. Rebuild the contract: `make`
+
+**Option 2: Fill by Hand**
+1. Print the contract
+2. Write in the information by hand where indicated in red
+3. Both parties sign and have notarized
+
+**Option 3: PDF Editor**
+1. Open `build/contract.pdf` in a PDF editor (Adobe Acrobat, etc.)
+2. Use the text tool to fill in placeholders
+3. Save the completed contract
+
+## Project Structure
+
+```
+heavenly-roofing-llc-contract/
+├── README.md                      # This file
+├── .gitignore                     # Git ignore patterns
+├── Makefile                       # Build automation
+├── contract.tex                   # Main LaTeX document
+├── styles/
+│   └── contract-style.sty        # Custom formatting
+├── sections/
+│   ├── parties.tex               # Party definitions
+│   ├── recitals.tex              # Background clauses
+│   ├── compensation.tex          # Payment terms and splits
+│   ├── trial-period.tex          # 8-job trial period
+│   ├── knowledge-exchange.tex    # Training obligations
+│   ├── termination.tex           # Termination provisions
+│   ├── confidentiality.tex       # NDA clauses
+│   ├── liability.tex             # Indemnification
+│   ├── dispute-resolution.tex    # Mediation and litigation
+│   ├── general-provisions.tex    # Standard legal terms
+│   └── signatures.tex            # Signature blocks and notary
+├── build/
+│   └── contract.pdf              # Generated contract
+└── examples/
+    └── sample-filled-contract.tex # Sample with filled data
+```
+
+## Customization
+
+### Changing Contract Terms
+
+To modify the contract terms, edit the relevant section file:
+
+- **Payment splits**: Edit `sections/compensation.tex`
+- **Trial period length**: Edit `sections/trial-period.tex`
+- **Big supplement threshold**: Edit `sections/compensation.tex` (search for $10,000)
+- **Notice period**: Edit `sections/termination.tex`
+- **Company address**: Edit `sections/parties.tex`
+
+After editing, rebuild: `make`
+
+### Changing Formatting
+
+To modify the visual appearance:
+- **Margins, spacing, fonts**: Edit `styles/contract-style.sty`
+- **Colors**: Edit the `\definecolor` commands in `contract-style.sty`
+- **Section numbering**: Edit `\titleformat` commands in `contract-style.sty`
+
+## Troubleshooting
+
+### "pdflatex: command not found"
+LaTeX is not installed. See Prerequisites section above.
+
+### Missing Package Errors
+```bash
+# TeXLive (Linux/Mac)
+sudo tlmgr install <package-name>
+
+# MiKTeX (Windows)
+# Packages will auto-install on first compile
+# Or use MiKTeX Package Manager
+```
+
+### Build Errors
+```bash
+# Clean and rebuild
+make clean
+make
+
+# Check for syntax errors in .tex files
+# Look for unmatched braces {}, missing \end{}, etc.
+```
+
+### PDF Won't Open
+```bash
+# Check that build completed successfully
+ls -lh build/contract.pdf
+
+# Try opening manually
+xdg-open build/contract.pdf  # Linux
+open build/contract.pdf       # macOS
+start build/contract.pdf      # Windows
+```
+
+## Sample Contract
+
+A sample filled contract is included for reference:
+
+```bash
+# Build the sample
+make sample
+
+# Output: build/sample-filled-contract.pdf
+```
+
+This demonstrates what the final contract looks like with all placeholders filled.
+
+## Legal Disclaimer
+
+**IMPORTANT**: This contract template is provided for informational purposes only and does not constitute legal advice. The template is intended as a starting point for discussion between parties.
+
+Both Heavenly Roofing LLC and the Specialist should:
+- Review the contract thoroughly
+- Consult with qualified legal counsel before executing
+- Ensure all terms accurately reflect the business arrangement
+- Have the contract reviewed for compliance with Oklahoma law
+
+The authors and contributors to this template assume no liability for the legal enforceability or appropriateness of this agreement for any particular purpose.
+
+## Notarization
+
+This contract includes a notarization section compliant with Oklahoma notary public requirements. To execute:
+
+1. Fill in all placeholder information
+2. Both parties review and agree to terms
+3. Schedule notarization appointment with a licensed Oklahoma notary public
+4. Both parties sign in the presence of the notary
+5. Notary completes the acknowledgment section and applies seal
+6. Retain copies for both parties' records
+
+## Support
+
+### Common Questions
+
+**Q: Can I use this contract in states other than Oklahoma?**
+A: The contract is drafted for Oklahoma law. Consult local legal counsel for use in other states, as contract law varies.
+
+**Q: What if I need more than 8 jobs for the trial period?**
+A: Edit `sections/trial-period.tex` and change "8" to your desired number.
+
+**Q: Can I change the profit split percentages?**
+A: Yes, edit `sections/compensation.tex` and rebuild the PDF.
+
+**Q: Do I need a lawyer?**
+A: Yes, both parties should consult legal counsel before executing any contract.
+
+### LaTeX Resources
+
+- LaTeX Documentation: https://www.latex-project.org/help/documentation/
+- Overleaf Tutorials: https://www.overleaf.com/learn
+- TeX Stack Exchange: https://tex.stackexchange.com/
+
+## License
+
+This contract template is provided as-is. Modify freely for your business needs. No warranty or guarantee of fitness for any purpose is provided.
+
+## Version
+
+- **Version**: 1.0
+- **Last Updated**: 2026-02-27
+- **Author**: Created for Heavenly Roofing LLC

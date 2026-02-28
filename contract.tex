@@ -1,0 +1,127 @@
+% contract.tex
+% Independent Contractor Agreement for Heavenly Roofing LLC
+% Insurance Supplement Specialist Services
+%
+% Build instructions:
+%   make                              (recommended)
+%   pdflatex -output-directory=build contract.tex
+
+\documentclass[12pt,letterpaper]{article}
+
+% ============================================================================
+% LOAD CUSTOM STYLE PACKAGE
+% ============================================================================
+\usepackage{styles/contract-style}
+
+% ============================================================================
+% DOCUMENT METADATA
+% ============================================================================
+\title{Independent Contractor Agreement}
+\author{Heavenly Roofing LLC}
+\date{\today}
+
+% ============================================================================
+% BEGIN DOCUMENT
+% ============================================================================
+\begin{document}
+
+% First page uses special style (no header)
+\thispagestyle{firstpage}
+
+% ============================================================================
+% TITLE AND FRONT MATTER
+% ============================================================================
+
+\contracttitle{Independent Contractor Agreement}
+\contractsubtitle{Insurance Supplement Specialist Services}
+\effectivedate
+
+% ============================================================================
+% SECTION 1: PARTIES TO THE AGREEMENT
+% ============================================================================
+\input{sections/parties}
+
+% ============================================================================
+% SECTION 2: RECITALS
+% ============================================================================
+\input{sections/recitals}
+
+% ============================================================================
+% SECTION 3: TERM AND SCOPE OF SERVICES
+% ============================================================================
+
+\section{Term and Scope of Services}
+\label{sec:term}
+
+\subsection{Engagement}
+This Agreement shall commence on the Effective Date and shall continue until
+terminated by either party in accordance with Section~\ref{sec:termination} of this Agreement.
+
+\subsection{Services}
+The Specialist shall provide the following services to the Company:
+
+\begin{enumerate}
+    \item Review and analyze insurance claims related to roofing damage;
+    \item Prepare and negotiate insurance supplement claims to maximize recovery;
+    \item Communicate with insurance adjusters and carriers on behalf of the Company;
+    \item Document and photograph property damage to support supplement claims;
+    \item Provide expertise and guidance on insurance claim procedures and best practices;
+    \item Such other related services as may be mutually agreed upon by the parties.
+\end{enumerate}
+
+\subsection{Independent Contractor Relationship}
+The parties expressly agree that the Specialist is an independent contractor and not
+an employee, agent, partner, or joint venturer of the Company. The Specialist shall
+have no authority to bind the Company or incur any obligation on behalf of the Company
+without the Company's prior written consent.
+
+% ============================================================================
+% SECTION 4: COMPENSATION
+% ============================================================================
+\input{sections/compensation}
+
+% ============================================================================
+% SECTION 5: TRIAL PERIOD AND PROGRESSIVE PARTNERSHIP
+% ============================================================================
+\input{sections/trial-period}
+
+% ============================================================================
+% SECTION 6: KNOWLEDGE EXCHANGE AND TRAINING
+% ============================================================================
+\input{sections/knowledge-exchange}
+
+% ============================================================================
+% SECTION 7: TERMINATION
+% ============================================================================
+\input{sections/termination}
+
+% ============================================================================
+% SECTION 8: CONFIDENTIALITY AND NON-DISCLOSURE
+% ============================================================================
+\input{sections/confidentiality}
+
+% ============================================================================
+% SECTION 9: LIABILITY AND INDEMNIFICATION
+% ============================================================================
+\input{sections/liability}
+
+% ============================================================================
+% SECTION 10: DISPUTE RESOLUTION
+% ============================================================================
+\input{sections/dispute-resolution}
+
+% ============================================================================
+% SECTION 11: GENERAL PROVISIONS
+% ============================================================================
+\input{sections/general-provisions}
+
+% ============================================================================
+% SIGNATURE BLOCKS AND NOTARIZATION
+% ============================================================================
+\input{sections/signatures}
+
+% ============================================================================
+% END OF CONTRACT
+% ============================================================================
+
+\end{document}

@@ -1,0 +1,238 @@
+% sample-filled-contract.tex
+% Example contract with filled placeholder values
+% This demonstrates what the final contract looks like with all fields completed
+
+\documentclass[12pt,letterpaper]{article}
+
+% Load custom style package (note the ../ to go up one directory)
+\usepackage{../styles/contract-style}
+
+% Override placeholder command to show filled values in normal text (not red)
+\renewcommand{\placeholder}[1]{#1}
+
+% Override company and specialist information with sample data
+\renewcommand{\specialistname}{John Michael Smith}
+\renewcommand{\specialistaddress}{1234 Oak Street, Oklahoma City, Oklahoma 73101}
+
+\title{Independent Contractor Agreement - Sample}
+\author{Heavenly Roofing LLC}
+\date{\today}
+
+\begin{document}
+
+\thispagestyle{firstpage}
+
+% ============================================================================
+% TITLE AND FRONT MATTER
+% ============================================================================
+
+\contracttitle{Independent Contractor Agreement}
+\contractsubtitle{Insurance Supplement Specialist Services}
+
+\begin{center}
+    \textbf{Effective Date:} March 1, 2026
+\end{center}
+\vspace{18pt}
+
+% ============================================================================
+% SECTION 1: PARTIES (FILLED VERSION)
+% ============================================================================
+
+\section{Parties to the Agreement}
+\label{sec:parties}
+
+This Independent Contractor Agreement (the \defterm{Agreement}) is entered into
+as of the Effective Date by and between:
+
+\vspace{12pt}
+
+\textbf{COMPANY:}
+
+\begin{tabular}{@{}ll}
+    \textbf{Name:}    & Heavenly Roofing LLC \\
+    \textbf{Address:} & 3313 Elmo Way \\
+                      & Moore, Oklahoma 73160 \\
+    \textbf{Entity Type:} & Oklahoma Limited Liability Company \\
+\end{tabular}
+
+\vspace{12pt}
+
+Hereinafter referred to as the \defterm{Company} or \defterm{Heavenly Roofing}.
+
+\vspace{18pt}
+
+\textbf{SPECIALIST:}
+
+\begin{tabular}{@{}ll}
+    \textbf{Name:}    & John Michael Smith \\
+    \textbf{Address:} & 1234 Oak Street \\
+                      & Oklahoma City, Oklahoma 73101 \\
+    \textbf{Entity Type:} & Individual / Sole Proprietor \\
+\end{tabular}
+
+\vspace{12pt}
+
+Hereinafter referred to as the \defterm{Specialist}.
+
+\vspace{12pt}
+
+The Company and the Specialist are collectively referred to as the \defterm{Parties}
+and individually as a \defterm{Party}.
+
+% ============================================================================
+% REMAINING SECTIONS (USE SAME FILES)
+% ============================================================================
+
+\input{../sections/recitals}
+
+% Term and Scope section (inline since it's in main contract.tex)
+\section{Term and Scope of Services}
+\label{sec:term}
+
+\subsection{Engagement}
+This Agreement shall commence on the Effective Date and shall continue until
+terminated by either party in accordance with Section~\ref{sec:termination} of this Agreement.
+
+\subsection{Services}
+The Specialist shall provide the following services to the Company:
+
+\begin{enumerate}
+    \item Review and analyze insurance claims related to roofing damage;
+    \item Prepare and negotiate insurance supplement claims to maximize recovery;
+    \item Communicate with insurance adjusters and carriers on behalf of the Company;
+    \item Document and photograph property damage to support supplement claims;
+    \item Provide expertise and guidance on insurance claim procedures and best practices;
+    \item Such other related services as may be mutually agreed upon by the parties.
+\end{enumerate}
+
+\subsection{Independent Contractor Relationship}
+The parties expressly agree that the Specialist is an independent contractor and not
+an employee, agent, partner, or joint venturer of the Company. The Specialist shall
+have no authority to bind the Company or incur any obligation on behalf of the Company
+without the Company's prior written consent.
+
+\input{../sections/compensation}
+\input{../sections/trial-period}
+\input{../sections/knowledge-exchange}
+\input{../sections/termination}
+\input{../sections/confidentiality}
+\input{../sections/liability}
+\input{../sections/dispute-resolution}
+
+% General provisions with filled email addresses
+\section{General Provisions}
+\label{sec:general}
+
+\subsection{Entire Agreement}
+\label{subsec:entire-agreement}
+
+This Agreement, including all exhibits and attachments hereto, constitutes the entire
+agreement between the Parties with respect to the subject matter hereof and supersedes
+all prior and contemporaneous agreements, understandings, negotiations, and discussions,
+whether oral or written, between the Parties.
+
+No representation, promise, inducement, or statement of intention has been made by either
+Party that is not embodied in this Agreement, and neither Party shall be bound by or
+liable for any alleged representation, promise, inducement, or statement of intention
+not so set forth.
+
+\subsection{Amendments and Modifications}
+\label{subsec:amendments}
+
+No amendment, modification, or waiver of any provision of this Agreement shall be effective
+unless it is in writing and signed by both Parties.
+
+\subsection{Governing Law}
+\label{subsec:governing-law}
+
+This Agreement shall be governed by and construed in accordance with the laws of the
+State of Oklahoma.
+
+\subsection{Severability}
+\label{subsec:severability}
+
+If any provision of this Agreement is held to be invalid, illegal, or unenforceable,
+the remaining provisions shall continue in full force and effect.
+
+\subsection{Waiver}
+\label{subsec:waiver}
+
+No failure or delay by either Party in exercising any right shall operate as a waiver thereof.
+
+\subsection{Assignment}
+\label{subsec:assignment}
+
+Neither Party may assign this Agreement without the prior written consent of the other Party.
+
+\subsection{Notices}
+\label{subsec:notices}
+
+All notices shall be in writing and sent to:
+
+\vspace{8pt}
+
+\textbf{To Company:}
+
+\begin{tabular}{@{}l}
+    Heavenly Roofing LLC \\
+    3313 Elmo Way \\
+    Moore, Oklahoma 73160 \\
+    Email: contact@heavenlyroofingokc.com
+\end{tabular}
+
+\vspace{12pt}
+
+\textbf{To Specialist:}
+
+\begin{tabular}{@{}l}
+    John Michael Smith \\
+    1234 Oak Street \\
+    Oklahoma City, Oklahoma 73101 \\
+    Email: john.smith@example.com
+\end{tabular}
+
+\subsection{Counterparts and Electronic Signatures}
+\label{subsec:counterparts}
+
+This Agreement may be executed in counterparts and electronic signatures are valid.
+
+% Signatures (simplified for sample)
+\newpage
+
+\section*{Execution of Agreement}
+
+\textbf{IN WITNESS WHEREOF}, the Parties have executed this Independent Contractor
+Agreement as of the Effective Date.
+
+\vspace{0.5in}
+
+\noindent\textbf{HEAVENLY ROOFING LLC}
+
+\vspace{0.5in}
+
+\noindent\textit{[Signature would appear here]}
+
+\vspace{0.3in}
+
+\noindent Sarah Johnson, Managing Member
+
+\vspace{0.6in}
+
+\noindent\textbf{INSURANCE SUPPLEMENT SPECIALIST}
+
+\vspace{0.5in}
+
+\noindent\textit{[Signature would appear here]}
+
+\vspace{0.3in}
+
+\noindent John Michael Smith
+
+\vspace{0.4in}
+
+\begin{center}
+\textit{Note: This is a sample contract for demonstration purposes only.}\\
+\textit{Actual contracts must be reviewed by legal counsel before execution.}
+\end{center}
+
+\end{document}
