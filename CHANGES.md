@@ -5,6 +5,55 @@ All notable changes to the Heavenly Roofing LLC Independent Contractor Agreement
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-03-01
+
+### Changed - Major Business Model Restructuring
+
+#### Fundamental Role Changes
+- **Specialist Role**: Changed from handling insurance supplements to handling overall insurance claim process
+- **Company Role**: Changed from receiving supplements to preparing/negotiating supplements (100% revenue)
+- **Specialist Now Handles**: Initial insurance claims, adjuster meetings, damage documentation, materials procurement
+- **Company Now Handles**: Insurance supplement preparation and negotiation (retains 100% of supplement revenue)
+
+#### Compensation Structure Changes
+- **Removed**: Big Supplement threshold at $10,000 with 50/50 split
+- **Trial Period** (Jobs 1-8): 70% Specialist / 30% Company of initial claim amounts only
+- **Post-Trial** (Job 9+): 50% Specialist / 50% Company of initial claim amounts only
+- **Supplements**: Company retains 100% of all supplement revenue
+- **Simplified**: No special thresholds or complex split structures
+
+#### Service Obligations Changes
+- **Specialist Services**: Updated to reflect insurance claim processing (not supplements)
+  - Meet with insurance adjusters and conduct inspections
+  - Source and order roofing materials for claim jobs
+  - Document and photograph damage for initial claims
+  - Process claims from filing through approval
+- **Company Services**: Now includes supplement preparation and negotiation
+
+#### Knowledge Exchange Changes
+- **Specialist Training**: Changed from "sales and customer acquisition" to "insurance sales techniques"
+  - Focus on selling roofing services through insurance claims
+  - Insurance claim lead generation and conversion
+  - Working with homeowners through claim process
+- **Company Training**: Changed from "clerical operations" to "clerical side of insurance work in roofing"
+  - Insurance claim documentation workflows
+  - Insurance-specific administrative procedures
+  - Claim tracking and filing systems
+
+#### Documentation Updates
+- Updated all section references from "supplement" focus to "insurance claim" focus where applicable
+- Clarified revenue split applies to initial claim amounts only
+- Removed all references to Big Supplement special handling
+- Updated compensation summary tables
+- Revised recitals to reflect new business model
+- Updated trial period language for clarity
+
+### Technical Changes
+- Modified 7 LaTeX section files (contract.tex, recitals.tex, compensation.tex, trial-period.tex, knowledge-exchange.tex)
+- Updated README.md business terms
+- Restructured compensation.tex entirely
+- Enhanced clarity in trial-period.tex
+
 ## [1.0.0] - 2026-02-28
 
 ### Added - Initial Release
@@ -279,9 +328,10 @@ This contract template is provided for informational purposes only and does not 
 
 ## Version History Summary
 
-| Version | Date       | Changes                           | Pages | Files |
-|---------|------------|-----------------------------------|-------|-------|
-| 1.0.0   | 2026-02-28 | Initial release - Full contract   | 38    | 16    |
+| Version | Date       | Changes                              | Pages | Files |
+|---------|------------|--------------------------------------|-------|-------|
+| 2.0.0   | 2026-03-01 | Major restructuring - New model      | TBD   | 16    |
+| 1.0.0   | 2026-02-28 | Initial release - Full contract      | 38    | 16    |
 
 ---
 

@@ -9,10 +9,12 @@ This project generates a professional, notarization-ready legal contract between
 ## Contract Features
 
 ### Core Business Terms
-- **Standard Split**: Specialist receives 70%, Heavenly Roofing receives 30%
-- **Big Supplements**: Claims of $10,000+ trigger a 50/50 split
-- **Trial Period**: After 8 completed jobs, all claims convert to 50/50 permanently
-- **Knowledge Exchange**: Mutual training obligations (sales and clerical)
+- **Trial Period Split** (Jobs 1-8): Specialist receives 70%, Heavenly Roofing receives 30% of initial insurance claim amounts
+- **Post-Trial Split** (Job 9+): Equal 50/50 split of initial insurance claim amounts
+- **Supplement Revenue**: Heavenly Roofing handles supplements and retains 100% of supplement revenue
+- **Trial Period**: 8 completed jobs marks transition from 70/30 to 50/50 split
+- **Roles**: Specialist handles overall insurance claims (adjuster meetings, materials); Company handles supplements
+- **Knowledge Exchange**: Mutual training (insurance sales techniques and clerical insurance operations)
 
 ### Legal Protections
 - Termination provisions (30-day notice and for cause)
@@ -148,9 +150,9 @@ To modify the contract terms, edit the relevant section file:
 
 - **Payment splits**: Edit `sections/compensation.tex`
 - **Trial period length**: Edit `sections/trial-period.tex`
-- **Big supplement threshold**: Edit `sections/compensation.tex` (search for $10,000)
 - **Notice period**: Edit `sections/termination.tex`
 - **Company address**: Edit `sections/parties.tex`
+- **Supplement revenue split**: Edit `sections/compensation.tex`
 
 After editing, rebuild: `make`
 
@@ -255,12 +257,26 @@ A: Yes, both parties should consult legal counsel before executing any contract.
 - Overleaf Tutorials: https://www.overleaf.com/learn
 - TeX Stack Exchange: https://tex.stackexchange.com/
 
+### Oklahoma Insurance Claims Research
+
+The contract structure is informed by research on Oklahoma roofing insurance claims and supplements:
+
+- [Oklahoma Policyholders Seeing Changes in Insurance Coverage for Roof Claims](https://www.vosslawfirm.com/blog/changes-for-oklahoma-roof-insurance-claims.cfm)
+- [Ultimate Guide to Roof Insurance Claims in Oklahoma City](https://www.arrowheadroofingokc.com/ultimate-guide-roof-insurance-claims-oklahoma-city/)
+- [Roofing Insurance Supplements Explained: What Every Contractor Needs to Know](https://useproline.com/roofing-insurance-supplements-for-roofers/)
+- [Should Your Roofer Meet With Your Insurance Adjuster?](https://triplediamondok.com/roofer-meet-with-your-insurance-adjuster/)
+- [Oklahoma Roof Insurance Claims: What Homeowners Need to Know](https://www.tier-oneroofing.com/blog/2025/august/oklahoma-roof-insurance-claims-what-adjusters-do/)
+
+These sources clarify the distinction between:
+- **Insurance Claims:** Initial damage reporting, adjuster meetings, and claim approval
+- **Insurance Supplements:** Additional claims when initial estimates miss damage
+
 ## License
 
 This contract template is provided as-is. Modify freely for your business needs. No warranty or guarantee of fitness for any purpose is provided.
 
 ## Version
 
-- **Version**: 1.0
-- **Last Updated**: 2026-02-27
+- **Version**: 2.0
+- **Last Updated**: 2026-03-01
 - **Author**: Created for Heavenly Roofing LLC
